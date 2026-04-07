@@ -7,13 +7,13 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Machine Learning
-  - MLOps
-  - Kubernetes
   - AI
   - Deep Learning
-  - Model Training
+  - Kubernetes
+  - Machine Learning
+  - MLOps
   - Model Serving
+  - Model Training
   - Open Source
 url: https://raw.githubusercontent.com/api-evangelist/kubeflow/refs/heads/main/apis.yml
 created: '2024-01-15'
@@ -42,8 +42,8 @@ apis:
       API for managing Jupyter notebook instances in Kubeflow.
     humanURL: https://www.kubeflow.org/docs/components/notebooks/
     tags:
-      - Notebooks
       - Jupyter
+      - Notebooks
     properties:
       - type: Documentation
         url: https://www.kubeflow.org/docs/components/notebooks/
