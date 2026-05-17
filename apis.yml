@@ -125,7 +125,7 @@ common:
     url: https://www.kubeflow.org
   - type: Documentation
     url: https://www.kubeflow.org/docs/
-  - type: Getting Started
+  - type: GettingStarted
     url: https://www.kubeflow.org/docs/started/
   - type: Blog
     url: https://blog.kubeflow.org/
