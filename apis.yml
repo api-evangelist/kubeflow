@@ -121,6 +121,8 @@ apis:
       - type: GitHubRepository
         url: https://github.com/kubeflow/kubeflow/tree/master/components/centraldashboard
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/kubeflow
   - type: Website
     url: https://www.kubeflow.org
   - type: Documentation
