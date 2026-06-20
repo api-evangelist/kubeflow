@@ -6,7 +6,7 @@ description: >-
   and scalable. It provides tools for training, serving, tuning, and managing
   ML models across the full lifecycle.
 type: Index
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - AI
   - Deep Learning
