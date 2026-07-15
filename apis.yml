@@ -121,6 +121,8 @@ apis:
       - type: GitHubRepository
         url: https://github.com/kubeflow/kubeflow/tree/master/components/centraldashboard
 common:
+  - type: AgenticAccess
+    url: agentic-access/kubeflow-agentic-access.yml
   - type: DomainSecurity
     url: security/kubeflow-domain-security.yml
   - type: Authentication
