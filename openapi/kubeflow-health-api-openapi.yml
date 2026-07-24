@@ -1,0 +1,66 @@
+openapi: 3.1.0
+info:
+  title: Kubeflow Pipelines Experiments Health API
+  description: REST API for the Kubeflow Pipelines platform (v2beta1). Enables programmatic management of experiments, pipelines, pipeline versions, runs, and recurring jobs for machine learning workflows running on Kubernetes. Authentication depends on the Kubeflow distribution and is typically a bearer token or session cookie provided in request headers.
+  version: 2beta1
+  contact:
+    name: Kubeflow Pipelines
+    url: https://www.kubeflow.org/docs/components/pipelines/
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+- url: https://{host}/pipeline
+  description: Kubeflow Pipelines deployment (replace {host} with your cluster hostname)
+  variables:
+    host:
+      default: kubeflow.example.com
+      description: Hostname of the Kubeflow deployment
+security:
+- bearerAuth: []
+tags:
+- name: Health
+  description: Health and auth checks
+paths:
+  /apis/v2beta1/healthz:
+    get:
+      tags:
+      - Health
+      operationId: getHealthz
+      summary: API server health check
+      responses:
+        '200':
+          description: Service healthy
+  /apis/v2beta1/auth:
+    get:
+      tags:
+      - Health
+      operationId: authorize
+      summary: Verify caller is authorized for the requested resource
+      parameters:
+      - in: query
+        name: namespace
+        schema:
+          type: string
+        description: Kubernetes namespace to check authorization against
+      - in: query
+        name: resources
+        schema:
+          type: string
+        description: Resource(s) to authorize (for example PIPELINES)
+      - in: query
+        name: verb
+        schema:
+          type: string
+        description: Verb to authorize (for example LIST, GET)
+      responses:
+        '200':
+          description: Caller is authorized
+        '401':
+          description: Caller is not authorized
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: Bearer token issued by your Kubeflow distribution's identity provider. Some deployments use a session cookie instead.
