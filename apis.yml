@@ -31,7 +31,7 @@ tags:
   - Open Source
 url: https://raw.githubusercontent.com/api-evangelist/kubeflow/refs/heads/main/apis.yml
 created: '2024-01-15'
-modified: '2026-04-28'
+modified: '2026-08-15'
 specificationVersion: '0.19'
 apis:
 - aid: kubeflow:metadata-api
@@ -170,6 +170,12 @@ apis:
   - type: GitHubRepository
     url: https://github.com/kserve/kserve
 common:
+  - type: MCPServer
+    name: Kubeflow MCP Server
+    url: https://github.com/kubeflow/mcp-server
+  - type: MCPDocumentation
+    name: Kubeflow MCP Server Documentation
+    url: https://github.com/kubeflow/mcp-server/blob/main/README.md
   - type: IssueTracker
     url: https://github.com/google/ml-metadata/issues
   - type: Releases
