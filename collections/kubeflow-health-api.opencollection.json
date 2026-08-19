@@ -1,0 +1,66 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Kubeflow Pipelines Experiments Health API",
+    "version": "2beta1"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Health",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "API server health check",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/pipeline/apis/v2beta1/healthz"
+          },
+          "docs": "API server health check"
+        },
+        {
+          "info": {
+            "name": "Verify caller is authorized for the requested resource",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/pipeline/apis/v2beta1/auth",
+            "params": [
+              {
+                "name": "namespace",
+                "value": "",
+                "type": "query",
+                "description": "Kubernetes namespace to check authorization against"
+              },
+              {
+                "name": "resources",
+                "value": "",
+                "type": "query",
+                "description": "Resource(s) to authorize (for example PIPELINES)"
+              },
+              {
+                "name": "verb",
+                "value": "",
+                "type": "query",
+                "description": "Verb to authorize (for example LIST, GET)"
+              }
+            ]
+          },
+          "docs": "Verify caller is authorized for the requested resource"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
