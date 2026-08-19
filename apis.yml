@@ -32,7 +32,7 @@ tags:
 url: https://raw.githubusercontent.com/api-evangelist/kubeflow/refs/heads/main/apis.yml
 created: '2024-01-15'
 modified: '2026-08-15'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: kubeflow:metadata-api
   name: Kubeflow Metadata API
