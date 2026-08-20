@@ -21,6 +21,15 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kubeflow.png
 tags:
+  - Artificial Intelligence
+  - Deep Learning
+  - Kubernetes
+  - Machine-Learning
+  - MLOps
+  - Model Serving
+  - Model Training
+  - Open-Source
+tags_raw:
   - AI
   - Deep Learning
   - Kubernetes
