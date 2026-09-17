@@ -173,16 +173,16 @@ apis:
     url: https://kserve.github.io/website/modelserving/v1beta1/
   - type: GitHubRepository
     url: https://github.com/kserve/kserve
-- aid: kubeflow:kubeflow-pipelineversions-api
-  name: Kubeflow PipelineVersions API
+- aid: kubeflow:kubeflow-pipeline-versions-api
+  name: Kubeflow Pipeline Versions API
   description: Manage versions of pipelines
-  humanURL: https://www.kubeflow.org/docs/components/pipelines/
+  humanURL: https://www.kubeflow.org/docs/components/pipelines/concepts/metadata/
   baseURL: https://your-kubeflow-instance/pipeline
   tags:
-  - PipelineVersions
+  - Pipeline Versions
   properties:
   - type: OpenAPI
-    url: openapi/kubeflow-pipelineversions-api-openapi.yml
+    url: openapi/kubeflow-pipeline-versions-api-openapi.yml
   - type: Documentation
     url: >-
       https://www.kubeflow.org/docs/components/pipelines/v2/reference/api/kubeflow-pipeline-api-spec/
