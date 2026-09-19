@@ -108,6 +108,10 @@ apis:
     to all installed Kubeflow components.
   humanURL: https://www.kubeflow.org/docs/components/central-dash/
   tags:
+  - Dashboards
+  - Management
+  - UI
+  tags_raw:
   - Dashboard
   - Management
   - UI
@@ -179,6 +183,8 @@ apis:
   humanURL: https://www.kubeflow.org/docs/components/pipelines/concepts/metadata/
   baseURL: https://your-kubeflow-instance/pipeline
   tags:
+  - PipelineVersions
+  tags_raw:
   - Pipeline Versions
   properties:
   - type: OpenAPI
