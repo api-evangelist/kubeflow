@@ -38,11 +38,11 @@ tags:
   - Artificial Intelligence
   - Deep Learning
   - Kubernetes
-  - Machine-Learning
+  - Machine Learning
   - MLOps
   - Model Serving
   - Model Training
-  - Open-Source
+  - Open Source
 tags_raw:
   - AI
   - Deep Learning
@@ -52,6 +52,8 @@ tags_raw:
   - Model Serving
   - Model Training
   - Open Source
+  - Machine-Learning
+  - Open-Source
 url: https://raw.githubusercontent.com/api-evangelist/kubeflow/refs/heads/main/apis.yml
 created: '2024-01-15'
 modified: '2026-08-15'
@@ -183,8 +185,6 @@ apis:
   humanURL: https://www.kubeflow.org/docs/components/pipelines/concepts/metadata/
   baseURL: https://your-kubeflow-instance/pipeline
   tags:
-  - PipelineVersions
-  tags_raw:
   - Pipeline Versions
   properties:
   - type: OpenAPI
