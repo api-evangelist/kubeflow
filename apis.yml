@@ -185,6 +185,8 @@ apis:
   humanURL: https://www.kubeflow.org/docs/components/pipelines/concepts/metadata/
   baseURL: https://your-kubeflow-instance/pipeline
   tags:
+  - PipelineVersions
+  tags_raw:
   - Pipeline Versions
   properties:
   - type: OpenAPI
@@ -199,6 +201,9 @@ apis:
   - type: GitHubRepository
     url: https://github.com/kserve/kserve
 common:
+  - type: CapabilityMap
+    url: capabilities/kubeflow-capability-edges.yml
+    name: Kubeflow Business Capability Map
   - type: MCPServer
     name: Kubeflow MCP Server
     url: https://github.com/kubeflow/mcp-server
