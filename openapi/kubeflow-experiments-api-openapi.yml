@@ -136,17 +136,6 @@ paths:
           description: List of runs
 components:
   schemas:
-    ListExperimentsResponse:
-      type: object
-      properties:
-        experiments:
-          type: array
-          items:
-            $ref: '#/components/schemas/Experiment'
-        total_size:
-          type: integer
-        next_page_token:
-          type: string
     Experiment:
       type: object
       properties:
@@ -168,6 +157,17 @@ components:
           enum:
           - AVAILABLE
           - ARCHIVED
+    ListExperimentsResponse:
+      type: object
+      properties:
+        experiments:
+          type: array
+          items:
+            $ref: '#/components/schemas/Experiment'
+        total_size:
+          type: integer
+        next_page_token:
+          type: string
   securitySchemes:
     bearerAuth:
       type: http

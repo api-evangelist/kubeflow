@@ -185,8 +185,6 @@ apis:
   humanURL: https://www.kubeflow.org/docs/components/pipelines/concepts/metadata/
   baseURL: https://your-kubeflow-instance/pipeline
   tags:
-  - PipelineVersions
-  tags_raw:
   - Pipeline Versions
   properties:
   - type: OpenAPI
