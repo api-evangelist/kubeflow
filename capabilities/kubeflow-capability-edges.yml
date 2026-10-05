@@ -1,0 +1,43 @@
+slug: kubeflow
+provider: Kubeflow
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: Pipelines
+  spec_file: kubeflow-pipelines-api-openapi.yml
+  capability_id: BC-610.60
+  capability_id_l1: BC-610
+  capability_name: Artificial Intelligence Management
+  confidence: 0.8
+  evidence: POST /apis/v2beta1/pipelines  createPipeline  Create a pipeline — 'open-source machine learning
+    platform ... tools for training, serving, tuning, and managing ML models'
+  reason: Management of machine-learning pipeline definitions; squarely AI/ML model lifecycle and MLOps.
+- tag: Experiments
+  spec_file: kubeflow-experiments-api-openapi.yml
+  capability_id: BC-610.60
+  capability_id_l1: BC-610
+  capability_name: Artificial Intelligence Management
+  confidence: 0.75
+  evidence: POST /apis/v2beta1/experiments  createExperiment  Create a new experiment; schema Experiment;
+    'machine learning workflows running on Kubernetes'
+  reason: ML experiment grouping for pipeline runs — MLOps construct, not product A/B experimentation
+    (BC-4280 would be the homograph trap here).
+- tag: Pipeline Versions
+  spec_file: kubeflow-pipeline-versions-api-openapi.yml
+  capability_id: BC-610.60
+  capability_id_l1: BC-610
+  capability_name: Artificial Intelligence Management
+  confidence: 0.75
+  evidence: GET /apis/v2beta1/pipelines/{pipeline_id}/versions  listPipelineVersions  List versions of
+    a pipeline
+  reason: Version lifecycle of ML workflow definitions on an ML platform — MLOps / AI lifecycle management.
