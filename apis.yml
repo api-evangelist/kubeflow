@@ -199,6 +199,12 @@ apis:
   - type: GitHubRepository
     url: https://github.com/kserve/kserve
 common:
+  - type: Plans
+    url: plans/kubeflow-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/kubeflow-rate-limits.yml
+  - type: FinOps
+    url: finops/kubeflow-finops.yml
   - type: CapabilityMap
     url: capabilities/kubeflow-capability-edges.yml
     name: Kubeflow Business Capability Map
