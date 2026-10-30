@@ -1,4 +1,4 @@
-# Kubeflow (kubeflow)
+# Kubeflow
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,160 +66,132 @@
 
 Kubeflow is an open-source machine learning platform for Kubernetes, designed to make deployments of ML workflows on Kubernetes simple, portable, and scalable. It provides tools for training, serving, tuning, and managing ML models across the full lifecycle.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/kubeflow/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/kubeflow/refs/heads/main/apis.yml)
+**Areas:** Artificial Intelligence · Deep Learning · Kubernetes · Machine Learning · MLOps · Model Serving · Model Training · Open Source
 
-## Scope
+## Kubeflow on APIs.io
 
-- **Type:** Index
+Everything profiled for Kubeflow is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kubeflow/](https://apis.io/providers/kubeflow/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (8)
 
-- AI
-- Deep Learning
-- Kubernetes
-- Machine Learning
-- MLOps
-- Model Serving
-- Model Training
-- Open Source
+- [Kubeflow Metadata API](https://apis.io/apis/kubeflow/metadata-api/) — API for tracking and managing metadata, artifacts, and lineage for ML workflows running on Kubeflow.
+- [Katib API](https://apis.io/apis/kubeflow/katib-api/) — Katib is the Kubeflow component for hyperparameter tuning, neural architecture search, and AutoML, exposing a Kubernetes-native API for defining and running…
+- [Kubeflow Notebooks API](https://apis.io/apis/kubeflow/notebooks-api/) — API for managing Jupyter notebook server instances within a Kubeflow cluster, providing isolated, browser-based development environments.
+- [Kubeflow Central Dashboard API](https://apis.io/apis/kubeflow/central-dashboard/) — API supporting the Kubeflow central dashboard and UI components, which provide a unified interface to all installed Kubeflow components.
+- [Kubeflow Experiments API](https://apis.io/apis/kubeflow/kubeflow-experiments-api/) — Group runs and recurring jobs into logical experiments
+- [Kubeflow Health API](https://apis.io/apis/kubeflow/kubeflow-health-api/) — Health and auth checks
+- [Kubeflow Pipelines API](https://apis.io/apis/kubeflow/kubeflow-pipelines-api/) — Manage pipeline definitions
+- [Kubeflow Pipeline Versions API](https://apis.io/apis/kubeflow/kubeflow-pipeline-versions-api/) — Manage versions of pipelines
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-01-15
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### Kubeflow Pipelines API
+Model Context Protocol servers that expose the API to agents.
 
-REST API for creating, managing, and executing machine learning pipelines on Kubernetes, including experiments, runs, and artifacts.
+- [Kubeflow MCP Server](https://apis.io/servers/kubeflow/kubeflow-mcp-server/)
 
-- **Human URL:** [https://www.kubeflow.org/docs/components/pipelines/](https://www.kubeflow.org/docs/components/pipelines/)
-- **Base URL:** `https://your-kubeflow-instance/pipeline`
+#### Agentic access (1)
 
-#### Tags
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- Machine Learning
-- MLOps
-- Pipelines
-- Workflows
+- [Kubeflow Agentic Access](https://apis.io/agentic-access/kubeflow/kubeflow-agentic-access/)
 
-#### Properties
+#### Collections (5)
 
-- [Documentation](https://www.kubeflow.org/docs/components/pipelines/v2/reference/api/kubeflow-pipeline-api-spec/)
-- [OpenAPI](https://raw.githubusercontent.com/kubeflow/pipelines/master/backend/api/v2beta1/swagger/pipeline.swagger.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [GitHub Repository](https://github.com/kubeflow/pipelines)
-- [Postman Collection](collections/kubeflow.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/kubeflow.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-### Kubeflow Metadata API
+- [Kubeflow Pipelines API](https://apis.io/collections/kubeflow/open-kubeflow/)
+- [Kubeflow Pipelines Experiments API](https://apis.io/collections/kubeflow/open-kubeflow-experiments-api/)
+- [Kubeflow Pipelines Experiments Health API](https://apis.io/collections/kubeflow/open-kubeflow-health-api/)
+- [Kubeflow Experiments Pipelines API](https://apis.io/collections/kubeflow/open-kubeflow-pipelines-api/)
+- [Kubeflow Pipelines Experiments PipelineVersions API](https://apis.io/collections/kubeflow/open-kubeflow-pipelineversions-api/)
 
-API for tracking and managing metadata, artifacts, and lineage for ML workflows running on Kubeflow.
+#### Security (2)
 
-- **Human URL:** [https://www.kubeflow.org/docs/components/pipelines/concepts/metadata/](https://www.kubeflow.org/docs/components/pipelines/concepts/metadata/)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags
+- [Kubeflow Authentication](https://apis.io/security/kubeflow/kubeflow-authentication/)
+- [Kubeflow Domain Security](https://apis.io/security/kubeflow/kubeflow-domain-security/)
 
-- Artifacts
-- Metadata
-- ML Tracking
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://www.kubeflow.org/docs/components/pipelines/concepts/metadata/)
-- [GitHub Repository](https://github.com/google/ml-metadata)
-- [Postman Collection](collections/kubeflow.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/kubeflow.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Kubeflow Plans Pricing](https://apis.io/plans/kubeflow/kubeflow-plans-pricing/)
 
-### KServe Inference API
+#### Rate limits (1)
 
-KServe (formerly KFServing) provides a serverless model inference API on Kubernetes, supporting standardized prediction protocols, autoscaling, and multi-framework model serving.
+Published request limits.
 
-- **Human URL:** [https://kserve.github.io/website/](https://kserve.github.io/website/)
+- [Kubeflow Rate Limits](https://apis.io/rate-limits/kubeflow/kubeflow-rate-limits/)
 
-#### Tags
+#### FinOps (1)
 
-- Inference
-- Model Serving
-- Predictions
-- Serverless
+What the API costs to run, by operation.
 
-#### Properties
+- [Kubeflow Finops](https://apis.io/finops/kubeflow/kubeflow-finops/)
 
-- [Documentation](https://kserve.github.io/website/modelserving/v1beta1/)
-- [OpenAPI](https://raw.githubusercontent.com/kserve/kserve/master/docs/predict-api/v2/rest_predict_v2.yaml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [GitHub Repository](https://github.com/kserve/kserve)
-- [Postman Collection](collections/kubeflow.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/kubeflow.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+## Where to find this API
 
-### Katib API
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-Katib is the Kubeflow component for hyperparameter tuning, neural architecture search, and AutoML, exposing a Kubernetes-native API for defining and running tuning experiments.
-
-- **Human URL:** [https://www.kubeflow.org/docs/components/katib/](https://www.kubeflow.org/docs/components/katib/)
-
-#### Tags
-
-- AutoML
-- Hyperparameter Tuning
-- Neural Architecture Search
-
-#### Properties
-
-- [Documentation](https://www.kubeflow.org/docs/components/katib/reference/)
-- [GitHub Repository](https://github.com/kubeflow/katib)
-- [Postman Collection](collections/kubeflow.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/kubeflow.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Kubeflow Notebooks API
-
-API for managing Jupyter notebook server instances within a Kubeflow cluster, providing isolated, browser-based development environments.
-
-- **Human URL:** [https://www.kubeflow.org/docs/components/notebooks/](https://www.kubeflow.org/docs/components/notebooks/)
-
-#### Tags
-
-- Development Environment
-- Jupyter
-- Notebooks
-
-#### Properties
-
-- [Documentation](https://www.kubeflow.org/docs/components/notebooks/)
-- [GitHub Repository](https://github.com/kubeflow/kubeflow/tree/master/components/notebook-controller)
-- [Postman Collection](collections/kubeflow.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/kubeflow.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Kubeflow Central Dashboard API
-
-API supporting the Kubeflow central dashboard and UI components, which provide a unified interface to all installed Kubeflow components.
-
-- **Human URL:** [https://www.kubeflow.org/docs/components/central-dash/](https://www.kubeflow.org/docs/components/central-dash/)
-
-#### Tags
-
-- Dashboard
-- Management
-- UI
-
-#### Properties
-
-- [Documentation](https://www.kubeflow.org/docs/components/central-dash/)
-- [GitHub Repository](https://github.com/kubeflow/kubeflow/tree/master/components/centraldashboard)
-- [Postman Collection](collections/kubeflow.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/kubeflow.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/kubeflow)
 - [Website](https://www.kubeflow.org)
 - [Documentation](https://www.kubeflow.org/docs/)
-- [Getting Started](https://www.kubeflow.org/docs/started/)
+- [Getting started](https://www.kubeflow.org/docs/started/)
 - [Blog](https://blog.kubeflow.org/)
-- [Git Hub Org](https://github.com/kubeflow)
-- [Community](https://www.kubeflow.org/docs/about/community/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 31.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.7 |
+| Contract quality | 42.9 |
+| Contract governance | 0.0 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 7.9 |
+
+**Agent readiness 21.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kubeflow/](https://apis.io/providers/kubeflow/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kubeflow: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kubeflow/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
